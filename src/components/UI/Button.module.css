@@ -1,0 +1,23 @@
+a.button{
+    display: inline-block;
+    padding: .35rem 1.2rem;
+    border: .1rem solid var(--secondary-color);
+    background-color: var(--ternary-color);
+    margin: .2rem 0.7rem;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    text-align: center;
+    transition: all .2s;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);;
+}
+
+a.button:hover{
+    color: darkblue;
+    transform: scale(1.1);
+    font-size: 1.1rem;
+}
+

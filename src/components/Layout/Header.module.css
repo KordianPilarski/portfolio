@@ -21,6 +21,6 @@
 
 @keyframes background-change {
   to {
-    background-color: rgba(0, 140, 255, 0.1);
+    background-color: rgba(0, 140, 255, 0.25);
   }
 }

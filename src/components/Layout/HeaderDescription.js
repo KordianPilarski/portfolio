@@ -1,3 +1,4 @@
+import Button from "../UI/Button";
 import styles from "./HeaderDescription.module.css";
 
 const HeaderDescription = () => {
@@ -7,7 +8,7 @@ const HeaderDescription = () => {
       <p>
         <span className={styles.specify}>Hello!</span> I'm <span className={styles.specify}>K</span>ordian <span className={styles.specify}>P</span>ilarski. 
       </p>
-      <p><button>Check out</button> for more</p>
+      <p><Button>Check out</Button> more about me</p>
     </div>
   );
 };

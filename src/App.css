@@ -1,4 +1,5 @@
 :root{
-  --primary-color: #0362AB;
+  --primary-color: rgb(3, 98, 171);
   --secondary-color: rgb(218, 16, 16);
+  --ternary-color: rgb(248, 248, 248);
 }

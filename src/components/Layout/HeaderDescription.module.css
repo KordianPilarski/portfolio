@@ -6,14 +6,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -20%);
   color: var(--primary-color);
-  border: 4px solid var(--primary-color);
+  border: .17rem solid var(--primary-color);
   border-radius: 1rem;
   background-color: rgba(236, 236, 236, 0.85);
   -webkit-box-shadow: 1px 15px 27px 15px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 15px 27px 15px rgba(0, 0, 0, 0.2);
-  animation: showDescription 1.5s ease-out forwards 4.5s;
+  animation: showDescription 1.5s ease-out forwards 5s;
   opacity: 0%;
 }
 
