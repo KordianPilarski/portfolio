@@ -1,8 +1,8 @@
-import headerImage from "../../assets/Slice 2.jpg";
-import styles from "./Home.module.css";
-import HeaderLogo from "../../components/Layout/HeaderLogo";
+import styles from "./Header.module.css";
+import HeaderDescription from "./HeaderDescription";
+import HeaderLogo from "./HeaderLogo";
 
-const Home = () => {
+const Header = () => {
   return (
     <>
       <header>
@@ -13,9 +13,10 @@ const Home = () => {
             src={headerImage}
           /> */}
         </div>
+        < HeaderDescription />
       </header>
     </>
   );
 };
 
-export default Home;
+export default Header;
