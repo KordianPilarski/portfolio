@@ -20,26 +20,26 @@ const Navbar = () => {
       {showMobileMenu && <XMark handleHideMibileMenu={handleHideMibileMenu} /> }
       <ul className={listStyles}>
         <li className={styles.item}>
-          <a href="github.com">about me</a>
+          <a href="#">about me</a>
         </li>
         <li className={styles.item}>
           <div className={styles.dropdown}>
-            <a href="github.com">projects</a>
+            <a href="#">projects</a>
             <ul className={styles["dropdown-menu"]}>
               <li className={styles.item}>
-                <a href="github.com">take a dog for a walk</a>
+                <a href="#">take a dog for a walk</a>
               </li>
               <li className={styles.item}>
-                <a href="github.com">payment manager</a>
+                <a href="#">payment manager</a>
               </li>
               <li className={styles.item}>
-                <a href="github.com">expenses app</a>
+                <a href="#">expenses app</a>
               </li>
             </ul>
           </div>
         </li>
         <li className={styles.item}>
-          <a href="github.com">resume</a>
+          <a href="#">resume</a>
         </li>
       </ul>
     </nav>
