@@ -13,7 +13,7 @@
   background-color: rgba(236, 236, 236, 0.85);
   -webkit-box-shadow: 1px 15px 27px 15px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 15px 27px 15px rgba(0, 0, 0, 0.2);
-  animation: showDescription 1.5s ease-out forwards 5s;
+  animation: showDescription 1.5s ease-in-out forwards 5s;
   opacity: 0%;
 }
 

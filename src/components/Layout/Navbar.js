@@ -1,7 +1,8 @@
 import styles from "./Navbar.module.css";
 import Hamburger from "../../assets/hamburger";
 import XMark from "../../assets/xMark";
-import { useState } from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -19,13 +20,20 @@ const Navbar = () => {
       {!showMobileMenu && <Hamburger handleShowMobileMenu={handleShowMobileMenu}/> }
       {showMobileMenu && <XMark handleHideMibileMenu={handleHideMibileMenu} /> }
       <ul className={listStyles}>
+      <li className={styles.item}>
+          <Link to="/">home</Link>
+          {/* <a href="#">about me</a> */}
+        </li>
         <li className={styles.item}>
-          <a href="#">about me</a>
+          <Link to="/about">about me</Link>
+          {/* <a href="#">about me</a> */}
         </li>
         <li className={styles.item}>
           <div className={styles.dropdown}>
-            <a href="#">projects</a>
-            <ul className={styles["dropdown-menu"]}>
+            
+          <Link to="/projects">projects</Link>
+            {/* <a href="#">projects</a> */}
+            {/* <ul className={styles["dropdown-menu"]}>
               <li className={styles.item}>
                 <a href="#">take a dog for a walk</a>
               </li>
@@ -35,11 +43,13 @@ const Navbar = () => {
               <li className={styles.item}>
                 <a href="#">expenses app</a>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </li>
         <li className={styles.item}>
-          <a href="#">resume</a>
+          
+        <Link to="/resume">resume</Link>
+          {/* <a href="#">resume</a> */}
         </li>
       </ul>
     </nav>

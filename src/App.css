@@ -1,5 +1,11 @@
 :root{
   --primary-color: rgb(3, 98, 171);
+  --primary-color--darker: rgb(0, 49, 87);
+  --primary-color--lighter: rgb(26, 139, 224);
+  --primary-color--lighter--transp: rgba(26, 139, 224, .5);
   --secondary-color: rgb(218, 16, 16);
   --ternary-color: rgb(248, 248, 248);
+  --quaternary-color: rgb(0, 255, 255);
+  --quaternary-color--transp: rgba(0, 255, 255, .5);
+  --quaternary-color--lighter: rgb(123, 248, 248);
 }
