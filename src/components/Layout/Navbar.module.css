@@ -23,9 +23,8 @@ ul {
   top: -2rem;
   display: none;
   flex-direction: column;
-  width: 70vw;
+  min-width: 75vw;
   height: 85vh;
-  background-color: var(--ternary-color);
 }
 
 .item {

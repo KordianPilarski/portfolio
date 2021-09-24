@@ -5,6 +5,8 @@ import arrow from "../../assets/fast-forward.svg";
 const Project = (props) => {
   return (
     <div className={styles.project}>
+      <div className={styles.wrapper}>
+
       <h2 className={styles.name}>{props.name}</h2>
       <div className={styles["project-about"]}>
         <div>
@@ -21,6 +23,7 @@ const Project = (props) => {
             <img className={styles.svg} src={arrow} alt="arrow" />
           </Button>
         </div>
+      </div>
       </div>
     </div>
   );

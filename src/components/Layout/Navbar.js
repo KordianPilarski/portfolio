@@ -4,7 +4,7 @@ import XMark from "../../assets/xMark";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const handleShowMobileMenu = () => {
     setShowMobileMenu(true);
@@ -13,7 +13,7 @@ const Navbar = () => {
     setShowMobileMenu(false);
   };
 
-  const listStyles = `${styles.list} ${showMobileMenu && styles["show-menu"]}`
+  const listStyles = `${styles.list} ${showMobileMenu && styles["show-menu"]} ${props.class}`
   
   return (
     <nav className={styles.navbar}>

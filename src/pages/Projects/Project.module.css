@@ -1,15 +1,21 @@
 .project {
   padding: 1rem;
   width: 4rem;
-  background-color: var(--quaternary-color--lighter);
+  background-color: var(--quaternary-color);
   /* height: 35vh; */
   width: 100%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   color: var(--primary-color--darker);
 }
 
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .project-about {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   /* position: relative; */
   /* height: 23vh; */
   display: flex;
@@ -18,7 +24,8 @@
 }
 
 .project-about p {
-  margin-top: 0.7rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: .5rem;
   padding-right: 0.7rem;
 }
 
@@ -43,7 +50,7 @@
 .secondary-heading {
   margin: 0;
   padding: 0.6rem 0.5rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: left;
   background-color: var(--quaternary-color--lighter);
   transform: translate(-1rem);
@@ -55,14 +62,14 @@
   /* height: 2.5rem;
   width: 13rem; */
   align-self: flex-end;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-width: 13rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .svg {
   height: 1rem;
-  margin-left: .5rem;
+  margin-left: 1rem;
+  filter: invert(45%);
 }
 
 @media (min-width: 500px) {
@@ -84,6 +91,7 @@
   }
   .name {
       text-align: center;
+      margin-bottom: 0;
   }
   .secondary-heading {
     transform: translate(-1rem);
@@ -91,9 +99,5 @@
   .bottom {
     display: flex;
     justify-content: space-between;
-  }
-
-  .project-button {
-    color: green;
   }
 }

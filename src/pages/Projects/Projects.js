@@ -32,13 +32,13 @@ const Projects = () => {
       name: "soon",
       description: "--",
       usedTechnologies: "--",
-      live: "--",
+      live: "#",
     },
   ];
   return (
     <>
       <section className={styles.projects}>
-        <Navbar />
+        <Navbar class={styles["projects-navbar"]}/>
         <div className={styles["projects-wrapper"]}>
           {projects.map((project) => (
             <Project
