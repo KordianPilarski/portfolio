@@ -15,6 +15,7 @@
   box-shadow: 1px 15px 27px 15px rgba(0, 0, 0, 0.2);
   animation: showDescription 1.5s ease-in-out forwards 5s;
   opacity: 0%;
+  width: 100%;
 }
 
 .header-description p {
@@ -29,5 +30,21 @@
 @keyframes showDescription {
   to {
     opacity: 100%;
+  }
+}
+
+@media (min-width: 500px) {
+  .header-description {
+    width: 80%;
+  }
+}
+@media (min-width: 850px) {
+  .header-description {
+    width: 50rem;
+  }
+}
+@media (min-width: 1300px) {
+  .header-description {
+    font-size: 1.4rem;
   }
 }

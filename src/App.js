@@ -2,7 +2,6 @@ import "./App.css";
 import About from "./pages/About/About";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Resume from "./pages/Resume/Resume";
 import Projects from "./pages/Projects/Projects";
 
 function App() {
@@ -32,9 +31,6 @@ function App() {
             </Route>
             <Route path="/projects">
               <Projects />
-            </Route>
-            <Route path="/resume">
-              <Resume />
             </Route>
             <Route path="/">
               <Home />

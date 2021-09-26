@@ -29,19 +29,21 @@ const About = () => {
               </p>
               <p>
                 I'm self-taught developer. My main source of knowledge are
-                internet tutorials and courses. I have taken courses created by
-                Maximilian Schwarzmüller, Colt Steele, Jonas Schmedtmann. I like
-                to watch video tutorials on youtube from Kevin Powell, Web Dev
-                Simplified.
+                documentations, tutorials and courses. I have taken courses
+                created by Maximilian Schwarzmüller, Colt Steele, Jonas
+                Schmedtmann. I like to watch video tutorials on youtube from
+                Kevin Powell, Web Dev Simplified.
               </p>
               <p>
-                You can find my projects on Projects section and check them out on
-                my{" "}
+                You can find my projects on Projects section and check them out
+                on my{" "}
                 <a
                   className={styles["gh-link"]}
                   href="https://github.com/The-Krd/"
                   target="_blank"
-                >Github
+                  rel="noopener noreferrer"
+                >
+                  Github
                 </a>
               </p>
               <p></p>

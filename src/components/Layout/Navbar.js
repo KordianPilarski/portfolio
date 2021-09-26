@@ -13,14 +13,18 @@ const Navbar = (props) => {
     setShowMobileMenu(false);
   };
 
-  const listStyles = `${styles.list} ${showMobileMenu && styles["show-menu"]} ${props.class}`
-  
+  const listStyles = `${styles.list} ${showMobileMenu && styles["show-menu"]} ${
+    props.class
+  }`;
+
   return (
     <nav className={styles.navbar}>
-      {!showMobileMenu && <Hamburger handleShowMobileMenu={handleShowMobileMenu}/> }
-      {showMobileMenu && <XMark handleHideMibileMenu={handleHideMibileMenu} /> }
+      {!showMobileMenu && (
+        <Hamburger handleShowMobileMenu={handleShowMobileMenu} />
+      )}
+      {showMobileMenu && <XMark handleHideMibileMenu={handleHideMibileMenu} />}
       <ul className={listStyles}>
-      <li className={styles.item}>
+        <li className={styles.item}>
           <Link to="/">home</Link>
           {/* <a href="#">about me</a> */}
         </li>
@@ -30,8 +34,7 @@ const Navbar = (props) => {
         </li>
         <li className={styles.item}>
           <div className={styles.dropdown}>
-            
-          <Link to="/projects">projects</Link>
+            <Link to="/projects">projects</Link>
             {/* <a href="#">projects</a> */}
             {/* <ul className={styles["dropdown-menu"]}>
               <li className={styles.item}>
@@ -47,9 +50,14 @@ const Navbar = (props) => {
           </div>
         </li>
         <li className={styles.item}>
-          
-        <Link to="/resume">resume</Link>
-          {/* <a href="#">resume</a> */}
+          <a
+            href="https://drive.google.com/file/d/1OJ0dTCEyX_GIcL3gWkvRyshwFNkkj004/view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            resume
+          </a>
+
         </li>
       </ul>
     </nav>
