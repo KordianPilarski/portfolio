@@ -3,6 +3,7 @@ import Hamburger from "../../assets/hamburger";
 import XMark from "../../assets/xMark";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import cv from '../../CV - EN.pdf'
 
 const Navbar = (props) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -51,7 +52,7 @@ const Navbar = (props) => {
         </li>
         <li className={styles.item}>
           <a
-            href="https://drive.google.com/file/d/1OJ0dTCEyX_GIcL3gWkvRyshwFNkkj004/view"
+            href={cv}
             target="_blank"
             rel="noopener noreferrer"
           >

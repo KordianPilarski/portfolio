@@ -82,7 +82,7 @@
 @media (min-width: 800px) {
   .wrapper {
     width: 90vw;
-    height: 65vh;
+    min-height: 65vh;
     margin: 0 auto;
   }
   .description {
@@ -106,5 +106,8 @@
   }
   .description {
     padding: 1rem 5rem 0 1rem;
+  }
+  .header {
+    width: 17rem;
   }
 }

@@ -14,7 +14,7 @@
   -webkit-box-shadow: 1px 15px 27px 15px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 15px 27px 15px rgba(0, 0, 0, 0.2);
   animation: showDescription 1.5s ease-in-out forwards 5s;
-  opacity: 0%;
+  opacity: 0;
   width: 100%;
 }
 
@@ -29,7 +29,7 @@
 
 @keyframes showDescription {
   to {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
